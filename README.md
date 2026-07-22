@@ -44,7 +44,7 @@ A full-stack personal finance planning application built with the MERN stack. MW
 
 ## My Contribution
 
-MWP was developed as a third-year final project by a team of three.
+MWP was developed as a third-year `group project` by a team of three.
 
 My primary contribution was backend development, including:
 
@@ -57,7 +57,3 @@ My primary contribution was backend development, including:
 
 I also collaborated with the frontend developer and contributed to UI and design improvements.
 
-
-## Project Status
-
-Deployed full-stack MERN application developed as a collaborative academic project.
