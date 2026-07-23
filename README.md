@@ -42,18 +42,10 @@ A full-stack personal finance planning application built with the MERN stack. MW
 * Nodemailer
 <br>
 
-## My Contribution
+## Group Project
 
-MWP was developed as a third-year `group project` by a team of three.
+MWP was developed as a third-year group project by a team of three:
 
-My primary contribution was backend development, including:
-
-* REST API development
-* MongoDB and Mongoose integration
-* Backend business logic
-* API integration support
-* JWT-based authentication
-* Password reset functionality using email
-
-I also collaborated with the frontend developer and contributed to UI and design improvements.
-
+* [Smit Desai](https://github.com/Smitdesai09)
+* [Kashyap Galiya](https://github.com/Kashyapgaliya29)
+* [Dhwanit Vibhani](https://github.com/Dhwanit168)
