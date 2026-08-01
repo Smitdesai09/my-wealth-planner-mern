@@ -95,15 +95,17 @@ function InflowOutflowChart({ data }) {
   }))
 
   return (
-    <div className="flex items-center gap-8">
-      <DonutRing
-        SIZE={160} R={54} stroke={22}
-        slices={slices}
-        isEmpty={isEmpty}
-        emptyColor="#e5e7eb"
-        centerLabel="Cash Flow"
-      />
-      <div className="flex flex-col gap-4 flex-1 min-w-0">
+    <div className="flex flex-col sm:flex-row items-center sm:items-center gap-5 sm:gap-8">
+      <div className="flex justify-center w-full sm:w-auto flex-shrink-0">
+        <DonutRing
+          SIZE={160} R={54} stroke={22}
+          slices={slices}
+          isEmpty={isEmpty}
+          emptyColor="#e5e7eb"
+          centerLabel="Cash Flow"
+        />
+      </div>
+      <div className="flex flex-col gap-4 flex-1 min-w-0 w-full">
         {slices.map((s) => (
           <div key={s.label} className="flex items-center justify-between gap-4">
             <div className="flex items-center gap-2.5 min-w-0">
@@ -137,15 +139,17 @@ function ExpensePieChart({ data }) {
   }))
 
   return (
-    <div className="flex items-center gap-8">
-      <DonutRing
-        SIZE={160} R={54} stroke={22}
-        slices={slices}
-        isEmpty={isEmpty}
-        emptyColor="#e5e7eb"
-        centerLabel="Expense"
-      />
-      <div className="flex flex-col gap-3 flex-1 min-w-0">
+    <div className="flex flex-col sm:flex-row items-center sm:items-center gap-5 sm:gap-8">
+      <div className="flex justify-center w-full sm:w-auto flex-shrink-0">
+        <DonutRing
+          SIZE={160} R={54} stroke={22}
+          slices={slices}
+          isEmpty={isEmpty}
+          emptyColor="#e5e7eb"
+          centerLabel="Expense"
+        />
+      </div>
+      <div className="flex flex-col gap-3 flex-1 min-w-0 w-full">
         {visible.map((d) => (
           <div key={d.category} className="flex items-center justify-between gap-4">
             <div className="flex items-center gap-2.5 min-w-0">
@@ -165,6 +169,7 @@ function ExpensePieChart({ data }) {
 
 // ─── Allocation Pie Chart (pure SVG) ────────────────────────────
 function AllocationPie({ allocation, targetAllocation }) {
+
   const data = [
     { key: 'equity', label: 'Equity', color: '#1f2937', target: targetAllocation?.equity },
     { key: 'debt',   label: 'Debt',   color: '#6b7280', target: targetAllocation?.debt   },
@@ -474,9 +479,9 @@ export default function Dashboard() {
         <div className="bg-white rounded-2xl border border-gray-100 p-5">
           <SectionHeader title="Income vs Expense" />
           {loading ? (
-            <div className="flex items-center gap-8">
+            <div className="flex flex-col sm:flex-row items-center gap-5 sm:gap-8">
               <Skeleton className="w-[160px] h-[160px] !rounded-full flex-shrink-0" />
-              <div className="flex-1 space-y-4">
+              <div className="flex-1 w-full space-y-4">
                 {[...Array(3)].map((_, i) => <Skeleton key={i} className="h-4 w-full" />)}
               </div>
             </div>
@@ -488,9 +493,9 @@ export default function Dashboard() {
         <div className="bg-white rounded-2xl border border-gray-100 p-5">
           <SectionHeader title="Expense Breakdown" />
           {loading ? (
-            <div className="flex items-center gap-8">
+            <div className="flex flex-col sm:flex-row items-center gap-5 sm:gap-8">
               <Skeleton className="w-[160px] h-[160px] !rounded-full flex-shrink-0" />
-              <div className="flex-1 space-y-3">
+              <div className="flex-1 w-full space-y-3">
                 {[...Array(5)].map((_, i) => <Skeleton key={i} className="h-4 w-full" />)}
               </div>
             </div>
