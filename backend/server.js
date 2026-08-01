@@ -19,7 +19,7 @@ app.use(express.json())
 app.use(cors({
   origin: [
     "http://localhost:5173",
-    "https://my-wealth-planner.onrender.com"
+    "https://my-wealth-planner.vercel.app"
   ],
   credentials: true
 }));
