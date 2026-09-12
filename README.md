@@ -4,7 +4,7 @@ A full-stack personal finance planning application built with the MERN stack. MW
 
 ## Live Demo
 
-[View Live Demo](https://my-wealth-planner.onrender.com/)
+[View Live Demo](https://my-wealth-planner.vercel.app/)
 
 ## Features
 
